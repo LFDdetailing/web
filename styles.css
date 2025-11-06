@@ -1,0 +1,1700 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    max-width: 500px;
+    height: auto;
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+    
+   
+}
+
+/*header movil*/
+
+header {
+    width: 100vw;
+    height: 13vh;
+    background: #0c0c0cf2;
+    padding: 3vw 7vw;
+    position: fixed;
+    z-index: 100;
+    margin-top: 0;
+     
+}
+
+.encabezado {
+     
+    .menu-desptok {
+        display: none;
+    }
+}
+
+.movil {
+    width: 100%;    
+    display: flex;
+    justify-content: space-between;
+    padding: 4vw 0;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3vw;
+
+        img {
+
+            width: 11vw;
+            height: 11vw;
+        }
+
+
+        p {
+            color: whitesmoke;
+            font-size: clamp(1.5rem, 3vw, 2rem);
+        
+        }
+    }
+    
+
+    button {
+        border: none;
+        background: transparent;
+       
+
+        img {
+            width: 11vw;
+            height: 11vw;
+        }
+    }
+
+
+}
+
+.menu-movil {
+    
+    width: 70%;
+    height: 75vh;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #121313f3;
+
+
+
+    img {
+        width: 12vw;
+        height: 12vw;
+    }
+
+    ul {
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        gap: 30px;
+        padding: 6vw;
+        font-size: 1.2rem;
+        color: white;
+        font-weight: 200;
+
+        #boton-cerrar {
+            max-width: 3vw;
+            max-height: 3vw;
+            background: transparent;
+            border: none;
+        }
+
+
+        #reservas {
+            background: whitesmoke;
+            width: 35vw;
+            height: 9vw;
+            width: 95%;
+            height: 6vh;
+            border-radius: 10px;
+           
+            a {
+                color: #333;
+                font-size: 1.1rem;
+                font-weight: 600;
+                text-align: center;
+                padding: 4vw 10vw;
+            }
+        }
+    }
+}
+
+
+
+.active{
+
+    transform: translateX(100%); /* menú oculto fuera de pantalla */
+    transition: transform all 4s ease-out;
+    
+}
+        
+
+
+/*main*/
+
+
+main {
+    width: 100%;
+    overflow-x: hidden;
+    background: whitesmoke;
+}
+
+/*banner*/
+
+.hero {
+
+    background-image: url(./imagenes/auto-movil.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 69vh;
+    width: 103vw;
+    margin-top: 0;
+    z-index: 0;
+    position: relative;
+      
+}
+
+
+.presentacion {
+    max-width: 97%;
+    height: 68vh;
+    padding: 29vw 8vw 10vw 8vw;
+    text-align: left;
+    background: #000000af;
+    
+
+    h1 {
+        font-size: 1.5rem;
+        color: #f5f5f5;
+        margin: 40px 0 20px 0;
+      
+    }
+
+    b {
+        color: #7f9aa3;
+        
+    }
+
+    h2 {
+        font-size: 1rem;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 95px;
+    }
+
+}
+
+
+.redes {
+    margin-top: -26vh;
+    padding: 0 8vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 3vw;
+
+
+    a {
+
+        img {
+            width: 36px;
+            height: 36px;
+            
+        }
+
+        .tiktok {
+            width: 42px;
+            height: 42px;
+        }
+
+    } 
+
+}
+
+.btn-reservas {
+
+    button {
+        width: 80%;
+        height: 7vh;
+        border-radius: 8px;
+        border: 1px solid #ffffff;
+        background: whitesmoke;
+        margin: 11vw 8vw 2vw 8vw;
+        
+
+        a {
+            color: #232323;
+            font-size: 1.3rem;
+            font-weight: 600;
+            padding: 2vh 15vw;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+/*servicios*/
+
+.titulo {
+     font-size: 1.5rem;
+     text-align: center;
+     margin-bottom: 5vw;
+     color: #333;
+}
+
+.servicios {
+    width: 100%;
+    margin: 5vw 0;
+    padding: 5vw;
+   
+
+   
+    p {
+        font-size: 1rem;
+        color: #333;
+
+        a {
+            color: rgb(8, 8, 134);
+        }
+    }
+
+    .iten-servicio {
+         margin-top: 10vw;
+
+    }
+
+}
+   
+
+
+
+.lista{
+        
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8vw;
+    margin-top: 10vw;
+
+}  
+
+.card{
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px #0000001a;
+    padding: 10vw 5vw;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    transition: transform all 4s ease;
+    overflow: hidden;
+
+
+    
+
+    img {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 10px;
+        background: #0e0d0d;
+        border-radius: 5px;
+        padding: 3vw;
+
+    }                
+                    
+    h4 {
+        color: #62767e;
+        margin-bottom: 5px;
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        color: #555;
+        margin: 5px 0 20px 0;
+    }
+
+
+    li {
+        text-align: left;
+        font-size: 1rem;
+        color: #333;
+        line-height: 1.8;   
+        
+           
+    }
+
+    .extra-items {
+        display: none;
+               
+    } 
+                                      
+                
+            
+}   
+
+ 
+.card:hover {
+
+    .extra-items {
+    display: block;
+    }
+
+    .mas {
+        display: none;
+    }
+
+}
+
+
+.ver-mas {
+ 
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+
+/*Galeria*/
+
+.videoteca {
+    width: 100%;
+    padding: 5vw;
+    margin-top: 5vw;
+
+    h3{
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 8vw auto 5vw auto;
+        padding-left: -5vw;
+
+    }
+
+}
+
+.carrusel {
+
+    width: 100vw;
+    height: auto;
+    margin-bottom: 10vw;
+    
+
+
+    p {
+        
+        color: #333;
+        margin-bottom: 10vw;
+        padding: 0 3.2vw;
+     
+    }
+
+   
+
+
+    ul {
+        
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        overflow: auto;
+        gap: 3vw;
+        margin-right: 10vw;
+
+           
+       
+    }
+
+}
+
+
+/*reseñas*/
+
+.reseñas {
+    width: 100%;
+    height: auto;
+    padding: 5vw;
+   
+
+    button {
+        
+        width: 100%;
+        height: 6vh;
+        background: #161515;
+        border-radius: 10px;
+        margin-bottom: 7vw;
+     
+       
+
+        a {
+            font-size: 1.1rem;
+            color: whitesmoke;
+            padding: 3vw 12vh;
+            cursor: pointer;
+        }
+
+    }
+
+}
+
+ .reviews {
+        width: 100%;
+        height: 300px;
+        margin: 12vw 0 3vw 0;
+        
+            
+    }
+
+
+
+/*diferenciales*/
+
+.diferenciales {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5vw;
+   
+}
+
+.items {
+    width: 100%;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding:  5vw 10vw;
+
+        li {
+            width: 45%;
+            height: auto;
+            background: #050505d5;
+            color: whitesmoke;
+            padding: 5vw;
+
+            font-size: 1.1rem;
+            border-radius: 10px;
+            border: 2px solid #7f9aa3;
+        }
+
+        .experiencia {
+            display: none;
+        }
+    }
+}
+
+
+
+/*Ubicación datos-datos*/
+
+.ubicacion {
+    width: 100%;
+    padding: 5vw;
+    margin-bottom: 10vh;
+}
+
+.flex {
+    margin-top: 10vw;
+
+    iframe {
+        width: 325px;
+        height: 350px;
+        margin-bottom: 10vh;
+    }
+}
+
+.datos {
+
+    ul {
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10vw;
+    }
+        
+
+    .encabezado {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 2vw;
+        margin-bottom: 2vw;
+
+       
+
+        img {
+            width: 48px;
+            height: 48px;
+            background: #0e0d0d;
+            padding: 3vw;
+            border-radius: 8px;
+        }
+
+
+    }
+
+    p {
+        color: #333;
+    }
+}
+
+
+/*whatsapp*/
+
+
+.whatsapp {
+    text-align: right;
+    margin-right: 5vw;
+    
+   a {
+    position:fixed;
+    bottom: 60vw;
+    right: 5vw;
+    top: 64vh;
+  
+        img {
+            width: 60px;
+            height: 60px;
+        }
+   }
+
+}
+
+
+
+/*footer*/
+
+footer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: whitesmoke;
+    background: #0e0d0d;    
+   
+   
+
+}
+
+.pie {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+}
+
+.sociales{
+    
+   text-align: center;
+}
+
+
+.sociales img {
+
+    width: 40px;
+    height: 40px;
+    margin: 15px 10px;
+    border-radius: 5px;
+    
+}
+
+
+.sociales .tiktok {
+    width: 45px;
+    height: 45px;
+    margin: 15px 10px;
+
+}
+
+
+.sociales h3 {
+   font-weight: 300;
+   margin: 2vw;
+}
+
+.creditos a {
+
+    color: #cccbcb;
+    cursor: pointer;
+       
+}
+
+
+.creditos {
+    
+    font-weight: 300;
+    font-size: 1rem;
+    padding-bottom: 4vh;
+
+    h3 {
+        font-weight: 200;
+        font-size: 1.2rem;
+    }
+
+    
+}
+
+.autor {
+        width: 100%;
+        padding: 10px;
+        border-top: 1px solid #525252;
+        padding: 2vh 0;
+        font-size: 1.1rem;
+
+         a {
+        color:  #c8c7c7;
+         }
+}
+
+
+/*RESPONSIVO TABLET*/
+
+@media (min-width: 500px) and (max-width: 900px) {
+
+    body {
+        max-width: 850px;
+
+    }
+
+    /*header*/
+
+    header {
+        height: 13vw;
+        padding: 4vw 7vw;
+    }
+
+
+    
+    .movil {
+
+        .logo {
+
+            img {
+                width: 6vw;
+                height: 6vw;
+            }
+        }
+
+        padding: 0;
+        
+        button {
+                        
+            img {
+                max-width: 5vw;
+                max-height: 5vw;
+            }
+        }
+
+    }
+
+
+    /*menu desplegable movil*/
+
+    .menu-movil {
+        
+        width: 60%;
+        height: 95vh;
+    
+        img {
+            width: 6vw;
+            height: 6vw;
+        }
+
+        ul {
+        
+            gap: 35px;
+            padding: 6vw;
+            font-size: 1.3rem;
+
+            #boton-cerrar {
+                max-width: 3vw;
+                max-height: 3vw;
+            }
+
+
+            #reservas {
+
+                background: whitesmoke;
+                width: 47vw;
+                max-height: 8vh;
+                border-radius: 10px;
+            
+                a {
+                
+                    font-size: 1.3rem;
+                    padding: 4vw 10vw;
+                }
+            }
+        }
+    }
+
+
+
+
+    /*MAIN*/
+
+   
+    /*banner*/
+
+    .hero {
+
+        background-image: url(./imagenes/auto-banner.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-height: 101vh;
+        max-width: 103vw;
+        margin-top: 0;
+        z-index: 0;
+
+              
+    }
+
+
+    .presentacion {
+        max-width: 100%;
+        max-height: 101vh;
+        padding: 18vw 8vw 15vw 10vw;
+       
+        h1 {
+            max-width: 80%;
+            font-size: 1.9rem;
+            color: #f5f5f5;
+            margin: 40px 0 20px 0;
+        
+        }
+
+       
+        h2 {
+            width: 80%;
+            font-size: 1.2rem;
+            
+        }
+
+
+
+    }
+
+
+    .redes {
+        margin-top: -30vh;
+        padding: 0 10vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 3vw;
+
+
+        a {
+
+            img {
+                width: 36px;
+                height: 36px;
+                
+            }
+
+            .tiktok {
+                width: 42px;
+                height: 42px;
+            }
+
+        } 
+
+    }
+
+
+
+    .btn-reservas{ 
+        margin: 0 3vw;
+    
+        button {
+                width: 70%;
+                height: 6vh;
+                border-radius: 8px;
+                border: 1px solid #ffffff;
+                background: whitesmoke;
+
+                a {
+                    color: #232323;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    padding: 2vh 15vw;
+                    cursor: pointer;
+                }
+        }
+
+    }
+
+   
+
+    .titulo {
+        font-size: 1.7rem;
+        text-align: center;
+        margin-bottom: 5vw;
+        color: #333;
+    }
+
+
+    /*servicios*/
+
+
+    .titulo {
+        font-size: 1.6rem;
+        
+    }
+
+    .servicios {
+        width: 100%;
+        margin: 6vw 0;
+        padding: 7vw;
+    
+
+    
+        p {
+            font-size: 1.2rem;
+            color: #333;
+            font-weight: lighter;
+
+            a {
+                color: rgb(8, 8, 134);
+            }
+        }
+
+        
+    }
+    
+
+    .card{
+       
+        padding: 10vw 8vw;
+            
+
+        img {
+            width: clamp(9vw, 11vw, 14vw);
+            height: clamp(9vw, 11vw, 14vw);
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }                
+                        
+        h4 {
+            color: #647d86;
+            margin-bottom: 9px;
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #555;
+            margin: 5px 0 20px 0;
+        }
+
+
+        li {
+            text-align: left;
+            font-size: 1.05rem;
+                     
+        }
+                          
+                    
+                
+    }   
+
+   
+    .ver-mas {
+    
+      transition: tranform 2s ease-in-out;
+    }
+
+   
+    /*Galeria*/
+
+    .videoteca {
+        width: 100%;
+        padding: 0 7vw;
+        
+
+        h3{
+            font-size: 1.7rem;
+            margin: 8vw auto 5vw auto;
+            padding-left: -5vw;
+
+        }
+
+    }
+
+    .carrusel {
+
+        p {
+                      
+            padding-right: 7vw;
+            font-size: 1.1rem;
+        
+        }
+
+
+        ul {
+                        
+            gap: 1vw;
+            margin-right: 10vw;
+                  
+        }
+
+    }
+
+
+    /*reseñas*/
+
+    .reseñas {
+
+        padding: 1vw 7vw;
+
+    
+        button {
+            
+            width: 100%;
+            max-height: 7vh;
+                 
+
+            a {
+                font-size: 1.2rem;
+                
+            }
+
+        }
+
+    }
+
+    .reviews {
+            width: 100%;
+            height: 305px;
+               
+                
+    }
+
+
+    /*diferenciales*/
+
+   
+    .items {
+        width: 100%;
+
+        ul {
+            padding: 2vw 7vw;
+            gap: 2vw;
+
+            li {
+                width: 35%;
+                padding: 5vw 4vw;
+                font-size: 1.1rem;
+            }
+
+            .experiencia {
+                display: block;
+            }
+        }
+    }
+
+   
+    /*Ubicación datos-datos*/
+
+
+    .flex {
+        margin-top: 10vw;
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            margin-bottom: 10vh;
+        }
+    }
+
+    .datos {
+
+                
+        .encabezado {
+                   
+
+            img {
+                width: clamp(8vw, 10vw, 12vw);
+                height: clamp(8vw, 10vw, 12vw);
+               
+            }
+
+            h3 {
+                font-size: 1.4rem;
+            }
+
+        }
+
+        p {
+            color: #333;
+        }
+    }
+
+
+   /*whatsapp*/
+
+
+    .whatsapp {
+        text-align: right;
+        margin-right: 5vw;
+        
+    a {
+        position:fixed;
+        bottom: 20vw;
+        right: 3vw;
+        top: 64vh;
+    
+            img {
+                width: clamp(9vw, 11vw, 13vw);
+                height: clamp(9vw, 11vw, 13vw);
+            }
+    }
+
+    }
+ 
+
+
+}
+
+
+
+/*Responsive DESPTOK*/
+
+@media (min-width: 901px) {
+
+    body {
+        max-width: 1480px;
+        height: auto;
+
+    }
+
+    /*header*/
+
+    header {
+        position: fixed;
+        width: 100%;
+        height: 9vw;
+        padding: 0;  
+        top: -2vw;   
+    
+    }
+       
+    .encabezado {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 4vw;
+
+            
+        .movil {
+            
+            .logo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 2vw;
+
+                img {
+                    width: 3vw;
+                    height: 3vw;
+                }
+            }    
+
+            button {
+                    display: none;
+            }
+
+            
+        }
+
+        .menu-movil {
+            display: none;
+
+        }
+
+        
+    }
+
+
+    .encabezado .menu-desptok {
+        
+        display: block;
+        
+            ul {
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: right;
+                gap: 4vw;
+                font-size: 1.2rem;
+
+                button {
+                    width: 12vw;
+                    height: 3vw;
+                    text-align: center;
+                    border-radius: 8px;
+
+                    a {
+                        color: #333;
+                        font-size: 1.3rem;
+                    }
+
+                    
+
+                }
+
+                a{
+                    color: whitesmoke;
+                    font-size: 1.2rem;
+                   
+
+                }
+                    
+            }
+
+
+
+    }
+
+
+    .active {
+
+    display: none;
+    }
+    
+       
+    
+    /*MAIN*/
+
+    main {
+        background: #eeeeee;
+    }
+    
+        /*banner*/
+
+        .hero {
+
+            background-image: url(./imagenes/auto-banner.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 115svh;
+            width: 100vw;
+            margin-top: -6vw;
+            z-index: 0;
+           
+            
+        }
+
+
+        .presentacion {
+            max-width: 100%;
+            height: 115svh;
+            padding: 18vw 8vw 15vw 10vw;
+            background: #000000b3;
+        
+            h1 {
+                max-width: 50%;
+                font-size: 2.5rem;
+                color: #f5f5f5;
+                margin: 20px 0 20px 0;
+            
+            }
+
+        
+            h2 {
+                width: 50%;
+                font-size: 1.3rem;
+                
+            }
+        }
+
+
+        .btn-reservas {   
+            padding-left: 2vw;
+        
+            button {
+                    width: 39%;
+                    height: 9vh;
+                    border-radius: 8px;
+                    border: 1px solid #ffffff;
+                    background: whitesmoke;
+                    margin-top: 5vw;
+                    
+
+                    a {
+                        color: #232323;
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                        padding: 2vh 7vw;
+                        cursor: pointer;
+                    }
+            }
+
+            
+        }
+
+        .redes {
+            margin-top: -38vh;
+            padding: 0 10vw;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            gap: 3vw;
+
+
+            a {
+
+                img {
+                    width: 36px;
+                    height: 36px;
+                    
+                }
+
+                .tiktok {
+                    width: 42px;
+                    height: 42px;
+                }
+
+            } 
+
+        }
+
+
+        .titulo {
+            font-size: 1.7rem;
+            text-align: center;
+            margin-bottom: 5vw;
+            color: #333;
+        }
+
+
+        /*servicios*/
+
+
+        .titulo {
+            font-size: 2rem;
+            
+            
+        }
+
+        .servicios {
+            width: 100%;
+            margin: 2vw 0;
+            padding: 7vw;
+        
+
+        
+            p {
+                font-size: 1.5rem;
+                color: #3e3e3e;
+                font-weight: 100;
+                font-family: "inter", sans-serif;
+
+                a {
+                    color: rgb(8, 8, 134);
+                }
+            }
+
+            
+        }
+
+        .lista {
+           flex-direction: row;
+           flex-wrap: wrap; 
+           gap: 4vw;
+        }
+        
+
+        .card{
+            
+            
+            padding: 10vw 7vw;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 16px #0000001a;
+            padding: 3vw 2vw;
+            width: 30%;
+            height: auto;
+            text-align: left;
+            transition: transform all 4s ease;
+            overflow: hidden;    
+
+            img {
+                width: 4vw;
+                height: 4vw;
+                padding: 1vw;
+                margin-bottom: 15px;
+                border-radius: 10px;
+            }                
+                            
+            h4 {
+                color: #647d86;
+                margin-bottom: 9px;
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+                color: #555;
+                margin: 5px 0 20px 0;
+            }
+
+
+            li {
+                text-align: left;
+                font-size: 1.05rem;
+                        
+            }
+                            
+                        
+                    
+        }   
+
+    
+        .ver-mas {
+        
+        transition: tranform all 4s ease-in-out;
+        }
+
+    
+        /*Galeria*/
+
+        .videoteca {
+            width: 100%;
+            padding: 0 7vw;
+            margin-top: 0;
+            
+
+            h3{
+                font-size: 2rem;
+                margin: 0 auto 5vw auto;
+                padding-left: -5vw;
+
+            }
+
+        }
+
+        .carrusel {
+
+            p {
+                width: 90%;        
+                padding: 0;
+                font-size: 1.5rem;
+                margin-bottom: 4vw;
+               
+            
+            }
+
+
+            ul {
+                            
+                gap: 1vw;
+                margin-right: 10vw;
+                    
+            }
+
+            li video {
+                width: 400;
+                height: 400;
+            }
+
+        }
+
+
+        /*reseñas*/
+
+        .reseñas {
+
+            padding: 1vw 7vw;
+            margin-top: 0;
+        
+            button {
+              
+                width: 50%;
+                height: 10vh;
+                margin: 0 25%;
+                text-align: center;
+                
+                                    
+
+                a {
+                    font-size: 1.2rem;
+                    
+                }
+
+            }
+
+        }
+
+        .reviews {
+                width: 100%;
+                height: 290px;
+                margin-top: 0;
+                
+                    
+        }
+
+
+        /*diferenciales*/
+
+    
+        .items {
+
+            width: 100%;
+            margin-top: 6vw;
+
+            ul {
+                padding: 2vw 7vw;
+                gap: 2vw;
+                justify-content: center;
+
+                li {
+                    width: 25%;
+                    padding: 5vw 3vw ;
+                    font-size: 1.1rem;
+                    background: rgb(43, 47, 48);
+                    border: none;
+                    color: whitesmoke;
+                    font-size: 1.8rem;
+                    text-align: center;
+                    border-radius: 10px;
+                    filter: drop-shadow();
+
+                }
+
+                .experiencia {
+                    display: block;
+                }
+            }
+        }
+
+    
+        /*Ubicación datos-datos*/
+        
+        .ubicacion {
+            margin-top: 7vw;
+            padding: 0 5vw;
+
+        }
+
+
+        .flex {
+            width: 100%;
+            padding: 3vw 0;
+            margin-top: -2vw;
+            display: flex;
+           
+            justify-content: center;
+            gap: 5vw;
+
+
+            iframe {
+                width: 500px;
+                height: 500px;
+                padding: 0;
+            }
+        }
+
+
+  
+        .datos {
+
+           
+            ul {
+                display: flex;
+                justify-content: left;
+                flex-direction: column;
+                gap: 3.5vw;
+                text-align: left;
+                
+            }
+        
+
+            .encabezado {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                gap: 1vw;
+                margin-bottom: 1vw;
+                padding-left: 0;
+
+          
+
+                img {
+                    width: 75px;
+                    height: 75px;
+                    background: #0e0d0d;
+                    padding: 2vw;
+                    border-radius: 8px;
+                    z-index: 50;
+                }
+
+            }
+
+                h3 {
+                    font-size: 1.5rem;
+                }
+
+
+                p {
+                    color: #333;
+                    font-size: 1.1rem;
+                    margin-top: 0;
+                }        
+        }            
+            
+
+
+    /*whatsapp*/
+
+
+    .whatsapp {
+        text-align: right;
+        margin-right: 5vw;
+            
+        a {
+            position:fixed;
+            bottom: 20vw;
+            right: 3vw;
+            top: 64vh;
+            
+            img {
+                width: 6vw;
+                height: 6vw;
+            }
+
+        }
+
+    }
+
+
+    /*footer*/
+
+    footer {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        color: whitesmoke;
+        background: #0e0d0d;    
+        padding:0;
+        margin: 0;
+    
+
+    }
+
+    .pie {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        text-align: center;
+        gap: 17vw;
+        
+        padding: 4vh 0;
+   
+
+    } 
+
+    .sociales{
+    margin-top: 0; 
+    padding: 0;
+    text-align: center;
+
+    }
+
+
+    .sociales img {
+
+        width: 40px;
+        height: 40px;
+        margin: 15px 10px;
+        border-radius: 5px;
+
+
+        
+    }
+
+    .sociales .tiktok {
+        width: 45px;
+        height: 45px;
+        margin: 15px 10px;
+
+    }
+
+
+    .sociales h3 {
+    font-weight: 300;
+    margin: 2vw;
+    font-size: 1.3rem;
+    }
+
+
+
+    .creditos {
+        
+    
+        a {
+
+            color: #cccbcb;
+            cursor: pointer;
+        }
+        
+    }
+
+
+    .creditos {
+        margin: 0;
+        text-align: center;
+        font-weight: 300;
+        font-size: 1rem;
+        
+
+        h3 {
+            font-weight: 200;
+            font-size: 1.2rem;
+        }
+
+       
+    }
+
+    .autor {
+            width: 100%;
+            padding: 2vw 0;
+            border-top: 1px solid rgb(82, 82, 82);
+            margin-top: 3vh;
+            color:  #cccbcb;
+            text-align: center;
+            font-size: 1.1rem;
+
+            a {
+                color: #b1b1b1;
+            }
+
+    }
+
+    
+}    
+
+
+
