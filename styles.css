@@ -21,11 +21,12 @@ body {
 header {
     width: 100vw;
     height: 13vh;
-    background: #0c0c0cf2;
+    background: #0c0c0c;
     padding: 3vw 7vw;
     position: fixed;
     z-index: 100;
     margin-top: 0;
+    backdrop-filter: blur(10px);
      
 }
 
@@ -104,6 +105,10 @@ header {
         color: white;
         font-weight: 200;
 
+        a {
+            color: whitesmoke;
+        }
+
         #boton-cerrar {
             max-width: 3vw;
             max-height: 3vw;
@@ -153,33 +158,43 @@ main {
 
 /*banner*/
 
-.hero {
+.hero{
 
     background-image: url(./imagenes/auto-movil.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 69vh;
+    height: 90vh;
     width: 103vw;
-    margin-top: 0;
+    margin-top: 5vh;
     z-index: 0;
-    position: relative;
+   
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 3vh;
+    width: 97%;
+    height: 88vh;
+    padding: 24vh 8vw;
+    text-align: left;
+    background: #000000af;
+    
       
 }
 
 
 .presentacion {
-    max-width: 97%;
-    height: 68vh;
-    padding: 29vw 8vw 10vw 8vw;
-    text-align: left;
-    background: #000000af;
+
     
+   
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         color: #f5f5f5;
-        margin: 40px 0 20px 0;
-      
+        margin-bottom: 20px;
+       
     }
 
     b {
@@ -188,24 +203,24 @@ main {
     }
 
     h2 {
-        font-size: 1rem;
+        font-size: 1.1rem;
         color: white;
         font-family: "Montserrat", sans-serif;
         font-weight: 500;
         line-height: 1.5;
-        margin-bottom: 95px;
+       
     }
 
 }
 
 
 .redes {
-    margin-top: -26vh;
-    padding: 0 8vw;
+     
+    
     display: flex;
     justify-content: left;
-    align-items: center;
-    gap: 3vw;
+    align-items: left;
+   
 
 
     a {
@@ -228,19 +243,20 @@ main {
 .btn-reservas {
 
     button {
-        width: 80%;
+        width: 97%;
         height: 7vh;
         border-radius: 8px;
         border: 1px solid #ffffff;
         background: whitesmoke;
-        margin: 11vw 8vw 2vw 8vw;
+        margin-top: 30px;
+       
         
 
         a {
             color: #232323;
             font-size: 1.3rem;
             font-weight: 600;
-            padding: 2vh 15vw;
+            padding: 2vh 10vw;
             cursor: pointer;
         }
     }
@@ -251,22 +267,23 @@ main {
 /*servicios*/
 
 .titulo {
-     font-size: 1.5rem;
+     font-size: 1.7rem;
      text-align: center;
-     margin-bottom: 5vw;
+     margin-bottom: 6vw;
      color: #333;
 }
 
 .servicios {
     width: 100%;
     margin: 5vw 0;
-    padding: 5vw;
+    padding: 8vw;
    
 
    
     p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: #333;
+       
 
         a {
             color: rgb(8, 8, 134);
@@ -320,11 +337,11 @@ main {
     h4 {
         color: #62767e;
         margin-bottom: 5px;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     p {
-        font-size: 1rem;
+        font-size: 1.05rem;
         color: #555;
         margin: 5px 0 20px 0;
     }
@@ -383,7 +400,7 @@ main {
 
     h3{
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         margin: 8vw auto 5vw auto;
         padding-left: -5vw;
 
@@ -404,6 +421,8 @@ main {
         color: #333;
         margin-bottom: 10vw;
         padding: 0 3.2vw;
+        font-size: 1.1rem;
+       
      
     }
 
@@ -431,12 +450,12 @@ main {
 .reseñas {
     width: 100%;
     height: auto;
-    padding: 5vw;
+    padding: 6vw;
    
 
     button {
         
-        width: 100%;
+        width: 98%;
         height: 6vh;
         background: #161515;
         border-radius: 10px;
@@ -447,7 +466,7 @@ main {
         a {
             font-size: 1.1rem;
             color: whitesmoke;
-            padding: 3vw 12vh;
+            padding: 3vw 10vh;
             cursor: pointer;
         }
 
@@ -511,16 +530,22 @@ main {
 }
 
 .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 5vw;
     margin-top: 10vw;
 
     iframe {
-        width: 325px;
+        width: 300px;
         height: 350px;
         margin-bottom: 10vh;
+        margin: 0 4vw ;
     }
 }
 
 .datos {
+    
 
     ul {
         display: flex;
@@ -528,6 +553,7 @@ main {
         flex-direction: column;
         flex-wrap: wrap;
         gap: 10vw;
+        margin: 7vw 4vw 4vw 4vw;
     }
         
 
@@ -566,9 +592,9 @@ main {
     
    a {
     position:fixed;
-    bottom: 60vw;
-    right: 5vw;
-    top: 64vh;
+    bottom: 30vw;
+    right: 3vw;
+    top: 90vh;
   
         img {
             width: 60px;
@@ -827,7 +853,7 @@ footer {
     
         button {
                 width: 70%;
-                height: 6vh;
+                height: 7vh;
                 border-radius: 8px;
                 border: 1px solid #ffffff;
                 background: whitesmoke;
@@ -1057,17 +1083,17 @@ footer {
         text-align: right;
         margin-right: 5vw;
         
-    a {
-        position:fixed;
-        bottom: 20vw;
-        right: 3vw;
-        top: 64vh;
-    
-            img {
-                width: clamp(9vw, 11vw, 13vw);
-                height: clamp(9vw, 11vw, 13vw);
-            }
-    }
+        a {
+            position:fixed;
+            bottom: 20vw;
+            right: 3vw;
+            top: 64vh;
+        
+                img {
+                    width: clamp(9vw, 11vw, 13vw);
+                    height: clamp(9vw, 11vw, 13vw);
+                }
+        }
 
     }
  
@@ -1193,92 +1219,109 @@ footer {
     
         /*banner*/
 
-        .hero {
+    .hero {
 
-            background-image: url(./imagenes/auto-banner.webp);
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 115svh;
-            width: 100vw;
-            margin-top: -6vw;
-            z-index: 0;
-           
+        background-image: url(./imagenes/auto-banner.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 120svh;
+        width: 100vw;
+        margin-top: -6vw;
+        z-index: 0;
+         
+            
+    }
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        gap: 3vh;
+        width: 100%;
+        height: 120vh;
+        padding: 47vh 8vw;
+        text-align: left;
+        background: #000000af;
+         
+    }
+
+
+    .presentacion {
+
+        width: 50%;
+
+        h1 {
+            font-size: 2.5rem;
+            color: #f5f5f5;
+            margin-bottom: 20px;
+        
+        }
+
+        b {
+            color: #7f9aa3;
             
         }
 
-
-        .presentacion {
-            max-width: 100%;
-            height: 115svh;
-            padding: 18vw 8vw 15vw 10vw;
-            background: #000000b3;
+        h2 {
+            font-size: 1.6rem;
+            color: white;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
+            line-height: 1.5;
         
-            h1 {
-                max-width: 50%;
-                font-size: 2.5rem;
-                color: #f5f5f5;
-                margin: 20px 0 20px 0;
-            
-            }
+        }
 
+    }
+
+
+    .redes {
         
-            h2 {
-                width: 50%;
-                font-size: 1.3rem;
+        
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        gap: 1vw;  
+
+        a {
+
+            img {
+                width: 36px;
+                height: 36px;  
                 
             }
-        }
 
-
-        .btn-reservas {   
-            padding-left: 2vw;
-        
-            button {
-                    width: 39%;
-                    height: 9vh;
-                    border-radius: 8px;
-                    border: 1px solid #ffffff;
-                    background: whitesmoke;
-                    margin-top: 5vw;
-                    
-
-                    a {
-                        color: #232323;
-                        font-size: 1.3rem;
-                        font-weight: 600;
-                        padding: 2vh 7vw;
-                        cursor: pointer;
-                    }
+            .tiktok {
+                width: 42px;
+                height: 42px;
+                margin-top: -3px;
             }
 
+        } 
+
+    }
+
+    .btn-reservas {
+
+        button {
+            width: 43%;
+            height: 8vh;
+            border-radius: 8px;
+            border: 1px solid #ffffff;
+            background: whitesmoke;
+            margin-top: 30px;
+        
             
-        }
-
-        .redes {
-            margin-top: -38vh;
-            padding: 0 10vw;
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            gap: 3vw;
-
 
             a {
-
-                img {
-                    width: 36px;
-                    height: 36px;
-                    
-                }
-
-                .tiktok {
-                    width: 42px;
-                    height: 42px;
-                }
-
-            } 
-
+                color: #232323;
+                font-size: 1.3rem;
+                font-weight: 600;
+                padding: 2vh 10vw;
+                cursor: pointer;
+            }
         }
+    }
 
 
         .titulo {
@@ -1310,6 +1353,7 @@ footer {
                 color: #3e3e3e;
                 font-weight: 100;
                 font-family: "inter", sans-serif;
+                text-align: center;
 
                 a {
                     color: rgb(8, 8, 134);
@@ -1402,6 +1446,7 @@ footer {
                 padding: 0;
                 font-size: 1.5rem;
                 margin-bottom: 4vw;
+                text-align: center;
                
             
             }
@@ -1432,7 +1477,7 @@ footer {
             button {
               
                 width: 50%;
-                height: 10vh;
+                height: 9vh;
                 margin: 0 25%;
                 text-align: center;
                 
@@ -1504,9 +1549,10 @@ footer {
             padding: 3vw 0;
             margin-top: -2vw;
             display: flex;
-           
-            justify-content: center;
-            gap: 5vw;
+            flex-direction: row;
+            align-items: start;
+            justify-content: left;
+            gap: 3vw;
 
 
             iframe {
@@ -1520,7 +1566,8 @@ footer {
   
         .datos {
 
-           
+             margin-top: -7vw;
+                       
             ul {
                 display: flex;
                 justify-content: left;
@@ -1542,10 +1589,10 @@ footer {
           
 
                 img {
-                    width: 75px;
-                    height: 75px;
+                    width: 50px;
+                    height: 50px;
                     background: #0e0d0d;
-                    padding: 2vw;
+                    padding: 1vw;
                     border-radius: 8px;
                     z-index: 50;
                 }
@@ -1577,11 +1624,11 @@ footer {
             position:fixed;
             bottom: 20vw;
             right: 3vw;
-            top: 64vh;
+            top: 84vh;
             
             img {
-                width: 6vw;
-                height: 6vw;
+                width: 5vw;
+                height: 5vw;
             }
 
         }
@@ -1608,15 +1655,15 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: left;
-        text-align: center;
+        align-items:first baseline;
         gap: 17vw;
-        
         padding: 4vh 0;
    
 
     } 
 
-    .sociales{
+
+    .sociales {
     margin-top: 0; 
     padding: 0;
     text-align: center;
@@ -1628,25 +1675,22 @@ footer {
 
         width: 40px;
         height: 40px;
-        margin: 15px 10px;
-        border-radius: 5px;
+              
+    }
 
 
+    .sociales .tiktok {
+        width: 46px;
+        height: 46px;
         
     }
 
-    .sociales .tiktok {
-        width: 45px;
-        height: 45px;
-        margin: 15px 10px;
-
-    }
-
-
     .sociales h3 {
-    font-weight: 300;
-    margin: 2vw;
-    font-size: 1.3rem;
+
+        font-weight: 300;
+        margin: 1vw;
+        font-size: 1.3rem;
+
     }
 
 
@@ -1675,21 +1719,31 @@ footer {
             font-size: 1.2rem;
         }
 
+        p {
+            margin-top: 10px;
+        }
+
        
     }
 
     .autor {
-            width: 100%;
-            padding: 2vw 0;
-            border-top: 1px solid rgb(82, 82, 82);
-            margin-top: 3vh;
-            color:  #cccbcb;
-            text-align: center;
-            font-size: 1.1rem;
+        width: 100%;
+        padding: 2vw 0;
+        border-top: 1px solid #525252;
+        margin-top: 2vh;
+        color: #cccbcb;
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 200;
 
-            a {
-                color: #b1b1b1;
-            }
+        a {
+            color: #b1b1b1;
+
+        }
+
+        a:hover {
+            color:#0999ac
+        }
 
     }
 

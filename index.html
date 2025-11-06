@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta name="author" content="Suridev" />
+
     <meta name="keywords" content="lavadero de autos, lavadero en maipú, detailing en maipu, detailing en mendoza, 
     limpieza de tapizados de auto, tratamientos ceramicos para autos, lfd detailing,  
     restauracion de opticas, servicio de limpieza post venta autos" />
+
     <meta name="robots" content="index, follow" />
     <meta
       name="description"
@@ -17,9 +19,10 @@
     <meta property="og:title" content="LFD Car Detailing" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="Limpieza integral y completa de su vehículo."  />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="./imagenes/logo-compartir.png" />
    
-    <link rel="shortcut icon" href="imagenes/logo-suridev.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="./imagenes/auto-burbujas.png" type="image/x-icon">
+
     <link rel="canonical" href="https://www.suri-dev.com"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css" />
@@ -47,9 +50,9 @@
 
                 <ul>
                       
-                    <li><a>Servicios</a></li>
-                    <li><a>Reseñas</a></li>
-                    <li><a>Ubicación</a></li>
+                    <li><a href="#servicio">Servicios</a></li>
+                    <li><a href="#reseña">Reseñas</a></li>
+                    <li><a href="#lugar">Ubicación</a></li>
                     <li><button id="reservas"><a href="https://wa.me/5492613617160" target="_blank">Reservar</a></button></li>
                 </ul>
             </nav>
@@ -59,9 +62,9 @@
 
                 <ul>
                     <li><button id="boton-cerrar"><img src="./imagenes/cerrar.webp"></button></li>    
-                    <li><a>Servicios</a></li>
-                    <li><a>Reseñas</a></li>
-                    <li><a>Ubicación</a></li>
+                    <li><a href="#servicio">Servicios</a></li>
+                    <li><a href="#reseña">Reseñas</a></li>
+                    <li><a href="#lugar">Ubicación</a></li>
                     <li><button id="reservas"><a href="https://wa.me/5492613617160" target="_blank">Reservar</a></button></li>
                 </ul>
             </nav>
@@ -73,28 +76,32 @@
     <main>
         <section class="hero">
 
-            <div class="presentacion">
+            <div class="container">
 
-                <h1>Experiencia <b>Premium</b> en<b> Cuidado</b> del Vehículo</h1>
-                <h2>Transforma tu vehículo con nuestros <strong>servicios de detailing.</strong></h2>
-              
-            </div>
+                <div class="presentacion">
 
-            <div class="redes">
+                    <h1>Experiencia <b>Premium</b> en<b> Cuidado</b> del Vehículo</h1>
+                    <h2>Transforma tu vehículo con nuestros <strong>servicios de detailing.</strong></h2>
+                
+                </div>
 
-                <a href="https://www.tiktok.com/@estebansuriano3"  target="_blank"><img class="tiktok" src="./imagenes/tiktok.webp" alt="tiktok"></a>
-                               
-                <a href=""  target="_blank"><img  src="./imagenes/instagram.webp" alt="instagram"/></a>
+                <div class="redes">
 
-                <a href=""  target="_blank"><img  src="./imagenes/facebook.webp" alt="facebook"/></a>
+                    <a href="https://www.tiktok.com/@estebansuriano3"  target="_blank"><img class="tiktok" src="./imagenes/tiktok.webp" alt="tiktok"></a>
                                 
+                    <a href="https://www.instagram.com/david_nitoker?utm_source=qr&igsh=MWpmaDFwdXRwZzE2bQ%3D%3D"  target="_blank"><img  src="./imagenes/instagram.webp" alt="instagram"/></a>
+
+                    <a href="https://www.facebook.com/p/LFD-CAR-detailing-100054367667403/"  target="_blank"><img  src="./imagenes/facebook.webp" alt="facebook"/></a>
+                                    
+                </div>
+
+                <div class="btn-reservas">
+
+                    <button><a href="https://wa.me/5492613617160/?text=Quiero%20reservar%20un%20turno%20desde%20la%20página%20web" target="_blank">Reserva tu turno</a></button>
+                </div>
             </div>
 
-            <div class="btn-reservas">
-
-                  <button><a href="https://wa.me/5492613617160/?text=Quiero%20reservar%20un%20turno%20desde%20la%20página%20web" target="_blank">Reserva tu turno</a></button>
-            </div>
-
+            <div id="servicio"></div>
 
         </section>
         
@@ -102,6 +109,7 @@
         <section class="servicios">
 
             <h3 class="titulo">Nuestros Servicios</h3>
+
             <p>Ofrecemos una <b>gama completa</b> de servicios y productos
                para el <b>cuidado</b> y la <b>limpieza</b> de tu vehículo. Calidad y 
                <b>atención al detalle</b> garantizada. 
@@ -339,6 +347,8 @@
 
             </div>
 
+            <div id="reseña"></div>
+
         </section>
 
 
@@ -371,6 +381,9 @@
                 </ul>
 
             </div>
+
+            <div id="lugar"></div>
+
         </section>
 
 
@@ -388,6 +401,7 @@
                 </div>
 
                 <div class= "datos">
+
                     <ul>
                         <li>
                             <div class="encabezado">
@@ -443,8 +457,8 @@
             <div class="sociales">
                 <h3>Siguenos en redes sociales</h3>
                 <a href="https://www.tiktok.com/@estebansuriano3" target="_blank"  aria-label="Redirige a tiktok" ><img class="tiktok" src="./imagenes/tiktok.webp" alt="tiktok"></a>
-                <a href="" target="_blank"  aria-label="Redirige a instagram"><img src="./imagenes/instagram.webp" alt="instagram"></a>
-                <a href="" target="_blank"  aria-label="Redirige a facebook" ><img src="./imagenes/facebook.webp" alt="facebook"></a>
+                <a href="https://www.instagram.com/david_nitoker?utm_source=qr&igsh=MWpmaDFwdXRwZzE2bQ%3D%3D" target="_blank"  aria-label="Redirige a instagram"><img src="./imagenes/instagram.webp" alt="instagram"></a>
+                <a href="https://www.facebook.com/p/LFD-CAR-detailing-100054367667403/" target="_blank"  aria-label="Redirige a facebook" ><img src="./imagenes/facebook.webp" alt="facebook"></a>
             </div>
 
             <div class="creditos">
