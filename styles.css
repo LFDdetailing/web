@@ -1,3 +1,9 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Bungee&family=Gravitas+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Meie+Script&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +28,7 @@ header {
     width: 100vw;
     height: 13vh;
     background: #0c0c0c;
-    padding: 3vw 7vw;
+    padding: 3vw 5.5vw;
     position: fixed;
     z-index: 100;
     margin-top: 0;
@@ -41,7 +47,7 @@ header {
     width: 100%;    
     display: flex;
     justify-content: space-between;
-    padding: 4vw 0;
+    padding: 3.5vw 0;
 
     .logo {
         display: flex;
@@ -57,8 +63,18 @@ header {
 
 
         p {
-            color: whitesmoke;
-            font-size: clamp(1.5rem, 3vw, 2rem);
+            color: #eeeeee;
+            font-size: 1.2rem;
+            font-family: "BBH Sans Bartle", sans-serif;
+            font-weight: 400;
+            line-height: 0.7;
+
+            b {
+                color: #7f9aa3;
+                font-family: "Gravitas One", serif;
+                font-size: 0.7rem;
+                
+            }
         
         }
     }
@@ -70,8 +86,8 @@ header {
        
 
         img {
-            width: 11vw;
-            height: 11vw;
+            width: 10vw;
+            height: 10vw;
         }
     }
 
@@ -81,7 +97,7 @@ header {
 .menu-movil {
     
     width: 70%;
-    height: 75vh;
+    height: 93vh;
     backdrop-filter: blur(10px);
     position: absolute;
     top: 0;
@@ -220,7 +236,8 @@ main {
     display: flex;
     justify-content: left;
     align-items: left;
-   
+    text-align: left;
+    gap: 2vw;
 
 
     a {
@@ -234,6 +251,7 @@ main {
         .tiktok {
             width: 42px;
             height: 42px;
+            margin-top: -3px;
         }
 
     } 
@@ -395,7 +413,7 @@ main {
 
 .videoteca {
     width: 100%;
-    padding: 5vw;
+    padding: 4.5vw;
     margin-top: 5vw;
 
     h3{
@@ -404,6 +422,17 @@ main {
         margin: 8vw auto 5vw auto;
         padding-left: -5vw;
 
+    }
+
+    p {
+        width: 96%;
+        color: #333;
+        margin-bottom: 10vw;
+        padding: 0 3.2vw;
+        font-size: 1.1rem;
+        text-align: justify;
+       
+     
     }
 
 }
@@ -416,26 +445,13 @@ main {
     
 
 
-    p {
-        
-        color: #333;
-        margin-bottom: 10vw;
-        padding: 0 3.2vw;
-        font-size: 1.1rem;
-       
-     
-    }
-
-   
-
-
     ul {
         
         display: flex;
         align-items: center;
         justify-content: left;
         overflow: auto;
-        gap: 3vw;
+        gap: 3.5vw;
         margin-right: 10vw;
 
            
@@ -449,8 +465,15 @@ main {
 
 .reseñas {
     width: 100%;
-    height: auto;
-    padding: 6vw;
+    height: 77vh;
+    padding: 10vw 6vw;
+    background: #e2e2e2;
+    z-index: 0;
+    margin-top: 2vw;
+
+    h3 {
+        margin-top: 3vw;
+    }
    
 
     button {
@@ -478,6 +501,7 @@ main {
         width: 100%;
         height: 300px;
         margin: 12vw 0 3vw 0;
+        z-index: 50;
         
             
     }
@@ -489,7 +513,7 @@ main {
 .diferenciales {
     width: 100%;
     height: auto;
-    margin-bottom: 5vw;
+    margin: 5vw 0;
    
 }
 
@@ -538,7 +562,7 @@ main {
 
     iframe {
         width: 300px;
-        height: 350px;
+        height: 300px;
         margin-bottom: 10vh;
         margin: 0 4vw ;
     }
@@ -589,12 +613,13 @@ main {
 .whatsapp {
     text-align: right;
     margin-right: 5vw;
+   
     
    a {
     position:fixed;
-    bottom: 30vw;
+    bottom: 9vh;
     right: 3vw;
-    top: 90vh;
+    top: 88vh;
   
         img {
             width: 60px;
@@ -623,33 +648,33 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     justify-content: center;
+    align-items: center;
     gap: 5vh;
 }
 
-.sociales{
+
+
+.sociales a {
+   
+
+    img {
+        width: 40px;
+        height: 40px;
+        margin: 15px 10px;
+        border-radius: 5px;
+
+    }
     
-   text-align: center;
+
+    .tiktok {
+        width: 46px;
+        height: 46px;
+        
+    }
 }
 
-
-.sociales img {
-
-    width: 40px;
-    height: 40px;
-    margin: 15px 10px;
-    border-radius: 5px;
-    
-}
-
-
-.sociales .tiktok {
-    width: 45px;
-    height: 45px;
-    margin: 15px 10px;
-
-}
 
 
 .sociales h3 {
@@ -697,36 +722,60 @@ footer {
 @media (min-width: 500px) and (max-width: 900px) {
 
     body {
-        max-width: 850px;
+        max-width: 900px;
 
     }
 
     /*header*/
 
     header {
-        height: 13vw;
+        height: 14vw;
         padding: 4vw 7vw;
     }
 
 
     
     .movil {
+        padding: 0;
+        align-items: start;
 
         .logo {
+            gap: 1.5vw;
 
             img {
-                width: 6vw;
-                height: 6vw;
+                width: 5vw;
+                height: 5vw;
             }
+
+
+            p {
+                color: #eeeeee;
+                font-size: 1.6rem;
+                font-family: "BBH Sans Bartle", sans-serif;
+                font-weight: 400;
+                line-height: 0.7;
+
+                b {
+                    color: #7f9aa3;
+                    font-family: "Gravitas One", serif;
+                    font-size: 0.9rem;
+                    
+                }
+        
+            }
+
+
+
+
         }
 
-        padding: 0;
+       
         
         button {
                         
             img {
-                max-width: 5vw;
-                max-height: 5vw;
+                width: 5vw;
+                height: 5vw;
             }
         }
 
@@ -737,7 +786,7 @@ footer {
 
     .menu-movil {
         
-        width: 60%;
+        width: 50%;
         height: 95vh;
     
         img {
@@ -760,8 +809,8 @@ footer {
             #reservas {
 
                 background: whitesmoke;
-                width: 47vw;
-                max-height: 8vh;
+                width: 40vw;
+                height: 5vh;
                 border-radius: 10px;
             
                 a {
@@ -786,8 +835,8 @@ footer {
         background-image: url(./imagenes/auto-banner.webp);
         background-repeat: no-repeat;
         background-size: cover;
-        max-height: 101vh;
-        max-width: 103vw;
+        height: 87vh;
+        width: 103vw;
         margin-top: 0;
         z-index: 0;
 
@@ -796,13 +845,13 @@ footer {
 
 
     .presentacion {
-        max-width: 100%;
-        max-height: 101vh;
-        padding: 18vw 8vw 15vw 10vw;
+        width: 100%;
+        height: 105vh;
+        padding: 0 5vw;
        
         h1 {
             max-width: 80%;
-            font-size: 1.9rem;
+            font-size: 2.5rem;
             color: #f5f5f5;
             margin: 40px 0 20px 0;
         
@@ -811,7 +860,8 @@ footer {
        
         h2 {
             width: 80%;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
+            font-weight: 200;
             
         }
 
@@ -821,25 +871,25 @@ footer {
 
 
     .redes {
-        margin-top: -30vh;
-        padding: 0 10vw;
+        
+        padding: 0 5vw;
         display: flex;
         justify-content: left;
-        align-items: center;
+        text-align: left;
         gap: 3vw;
 
 
         a {
 
             img {
-                width: 36px;
-                height: 36px;
+                width: 42px;
+                height: 42px;
                 
             }
 
             .tiktok {
-                width: 42px;
-                height: 42px;
+                width: 47px;
+                height: 47px;
             }
 
         } 
@@ -849,20 +899,21 @@ footer {
 
 
     .btn-reservas{ 
-        margin: 0 3vw;
+          padding: 0 5vw;
     
         button {
-                width: 70%;
+                width: 80%;
                 height: 7vh;
                 border-radius: 8px;
                 border: 1px solid #ffffff;
                 background: whitesmoke;
+            
 
                 a {
                     color: #232323;
-                    font-size: 1.3rem;
+                    font-size: 1.5rem;
                     font-weight: 600;
-                    padding: 2vh 15vw;
+                    padding: 2vh 12vw;
                     cursor: pointer;
                 }
         }
@@ -872,7 +923,7 @@ footer {
    
 
     .titulo {
-        font-size: 1.7rem;
+        font-size: 2rem;
         text-align: center;
         margin-bottom: 5vw;
         color: #333;
@@ -882,25 +933,23 @@ footer {
     /*servicios*/
 
 
-    .titulo {
-        font-size: 1.6rem;
-        
-    }
+  
 
     .servicios {
         width: 100%;
         margin: 6vw 0;
-        padding: 7vw;
+        padding:  7vw 10vw;
     
 
     
         p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             color: #333;
-            font-weight: lighter;
+            font-weight: 300;
 
-            a {
-                color: rgb(8, 8, 134);
+            b {
+               font-size: 400;
+               color: #161515;
             }
         }
 
@@ -910,12 +959,12 @@ footer {
 
     .card{
        
-        padding: 10vw 8vw;
+        padding: 10vw 10vw;
             
 
         img {
-            width: clamp(9vw, 11vw, 14vw);
-            height: clamp(9vw, 11vw, 14vw);
+            width: clamp(9vw, 10vw, 12vw);
+            height: clamp(9vw, 10vw, 12vw);
             margin-bottom: 15px;
             border-radius: 10px;
         }                
@@ -923,11 +972,11 @@ footer {
         h4 {
             color: #647d86;
             margin-bottom: 9px;
-            font-size: 1.5rem;
+            font-size: 1.7rem;
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             color: #555;
             margin: 5px 0 20px 0;
         }
@@ -935,7 +984,7 @@ footer {
 
         li {
             text-align: left;
-            font-size: 1.05rem;
+            font-size: 1.1rem;
                      
         }
                           
@@ -954,11 +1003,11 @@ footer {
 
     .videoteca {
         width: 100%;
-        padding: 0 7vw;
+        padding: 0 10vw;
         
 
         h3{
-            font-size: 1.7rem;
+            font-size: 2rem;
             margin: 8vw auto 5vw auto;
             padding-left: -5vw;
 
@@ -967,11 +1016,13 @@ footer {
     }
 
     .carrusel {
+     
+       
 
         p {
-                      
-            padding-right: 7vw;
-            font-size: 1.1rem;
+            width: 80%;          
+            text-align: justify;
+            font-size: 1.4rem;
         
         }
 
@@ -990,8 +1041,8 @@ footer {
 
     .reseñas {
 
-        padding: 1vw 7vw;
-
+        padding: 10vw 7vw 6vw 7vw;
+     
     
         button {
             
@@ -1021,6 +1072,7 @@ footer {
    
     .items {
         width: 100%;
+        margin-top: 5vw;
 
         ul {
             padding: 2vw 7vw;
@@ -1029,7 +1081,7 @@ footer {
             li {
                 width: 35%;
                 padding: 5vw 4vw;
-                font-size: 1.1rem;
+                font-size: 1.3rem;
             }
 
             .experiencia {
@@ -1041,20 +1093,28 @@ footer {
    
     /*Ubicación datos-datos*/
 
+    .ubicación {
+          padding: 0 1vw;
+
+    }
+
 
     .flex {
         margin-top: 10vw;
+      
+        gap: 3vw;
 
         iframe {
             width: 100%;
             height: 400px;
-            margin-bottom: 10vh;
+            padding-right: 6vw;
         }
     }
 
     .datos {
 
-                
+         padding: 0;  
+
         .encabezado {
                    
 
@@ -1065,13 +1125,14 @@ footer {
             }
 
             h3 {
-                font-size: 1.4rem;
+                font-size: 1.5rem;
             }
 
         }
 
         p {
             color: #333;
+            font-size: 1.1rem;
         }
     }
 
@@ -1087,11 +1148,11 @@ footer {
             position:fixed;
             bottom: 20vw;
             right: 3vw;
-            top: 64vh;
+            top: 89vh;
         
                 img {
-                    width: clamp(9vw, 11vw, 13vw);
-                    height: clamp(9vw, 11vw, 13vw);
+                    width: 10vw;
+                    height: 10vw;
                 }
         }
 
@@ -1119,7 +1180,7 @@ footer {
         position: fixed;
         width: 100%;
         height: 9vw;
-        padding: 0;  
+        padding: 1vw 0;  
         top: -2vw;   
     
     }
@@ -1351,12 +1412,13 @@ footer {
             p {
                 font-size: 1.5rem;
                 color: #3e3e3e;
-                font-weight: 100;
+                font-weight: 300;
                 font-family: "inter", sans-serif;
                 text-align: center;
 
-                a {
-                    color: rgb(8, 8, 134);
+                b {
+                    color: #161515;
+                    font-weight: 500;
                 }
             }
 
@@ -1395,19 +1457,21 @@ footer {
             h4 {
                 color: #647d86;
                 margin-bottom: 9px;
-                font-size: 1.5rem;
+                font-size: 1.6rem;
             }
 
             p {
-                font-size: 1.2rem;
+                font-size: 1.3rem;
                 color: #555;
                 margin: 5px 0 20px 0;
+                text-align: left;
+                font-weight: 300;
             }
 
 
             li {
                 text-align: left;
-                font-size: 1.05rem;
+                font-size: 1.1rem;
                         
             }
                             
@@ -1434,24 +1498,25 @@ footer {
                 font-size: 2rem;
                 margin: 0 auto 5vw auto;
                 padding-left: -5vw;
+                text-align: center;
 
+            }
+
+            p {
+                width: 100%;        
+                font-size: 1.5rem;
+                padding: 0 15% 3vw 15%;
+                text-align: center;
+               
             }
 
         }
 
+
         .carrusel {
+           
 
-            p {
-                width: 90%;        
-                padding: 0;
-                font-size: 1.5rem;
-                margin-bottom: 4vw;
-                text-align: center;
-               
-            
-            }
-
-
+              
             ul {
                             
                 gap: 1vw;
@@ -1624,7 +1689,7 @@ footer {
             position:fixed;
             bottom: 20vw;
             right: 3vw;
-            top: 84vh;
+            top: 95vh;
             
             img {
                 width: 5vw;
