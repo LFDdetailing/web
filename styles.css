@@ -57,8 +57,8 @@ header {
 
         img {
 
-            width: 11vw;
-            height: 11vw;
+            width: 10vw;
+            height: 10vw;
         }
 
 
@@ -140,6 +140,7 @@ header {
             width: 95%;
             height: 6vh;
             border-radius: 10px;
+            filter: drop-shadow(3px 3px 3px #020202c5);
            
             a {
                 color: #333;
@@ -267,7 +268,7 @@ main {
         border: 1px solid #ffffff;
         background: whitesmoke;
         margin-top: 30px;
-       
+        filter: drop-shadow(3px 3px 3px #020202c5);
         
 
         a {
@@ -301,11 +302,9 @@ main {
     p {
         font-size: 1.2rem;
         color: #333;
+        text-align: justify;
        
-
-        a {
-            color: rgb(8, 8, 134);
-        }
+      
     }
 
     .iten-servicio {
@@ -611,9 +610,17 @@ main {
 
 
 .whatsapp {
+    width: 5vw;
+    height: 5vw;
     text-align: right;
     margin-right: 5vw;
-   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+
+
+      
     
    a {
     position:fixed;
@@ -627,6 +634,7 @@ main {
         }
    }
 
+  
 }
 
 
@@ -648,31 +656,29 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center;
     justify-content: center;
-    align-items: center;
     gap: 5vh;
 }
 
 
 
 .sociales a {
-   
+   margin-top: 13px;
 
     img {
         width: 40px;
         height: 40px;
-        margin: 15px 10px;
-        border-radius: 5px;
 
     }
     
 
-    .tiktok {
-        width: 46px;
-        height: 46px;
+}
+
+.tiktok {
+        width: 48px;
+        height: 48px;
+        margin-top: -4px;
         
-    }
 }
 
 
@@ -1181,7 +1187,7 @@ footer {
         width: 100%;
         height: 9vw;
         padding: 1vw 0;  
-        top: -2vw;   
+        top: -3vw;   
     
     }
        
@@ -1199,17 +1205,28 @@ footer {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 2vw;
+                gap: 1vw;
 
                 img {
-                    width: 3vw;
-                    height: 3vw;
+                    width: 3.5vw;
+                    height: 3.5vw;
+                }
+
+                p{
+                    font-size: 1.5rem;
+                    color: #e0e0e0;
+
+                    b{
+                        font-size: 0.9rem;
+                    }
                 }
             }    
 
             button {
                     display: none;
             }
+
+
 
             
         }
@@ -1247,15 +1264,27 @@ footer {
                         font-size: 1.3rem;
                     }
 
-                    
+                   
+                }
 
+                button:hover {
+
+                    background: #7f9aa3;
+
+                    a {
+                        color: white;
+                    }
                 }
 
                 a{
                     color: whitesmoke;
                     font-size: 1.2rem;
                    
+                }
 
+                a:hover {
+
+                   color: #7f9aa3;
                 }
                     
             }
@@ -1382,6 +1411,14 @@ footer {
                 cursor: pointer;
             }
         }
+
+        button:hover {
+             background: #7f9aa3;
+
+                    a {
+                        color: white;
+                    }
+        }
     }
 
 
@@ -1412,13 +1449,13 @@ footer {
             p {
                 font-size: 1.5rem;
                 color: #3e3e3e;
-                font-weight: 300;
+                font-weight: 400;
                 font-family: "inter", sans-serif;
                 text-align: center;
 
                 b {
                     color: #161515;
-                    font-weight: 500;
+                    font-weight: 600;
                 }
             }
 
@@ -1496,7 +1533,7 @@ footer {
 
             h3{
                 font-size: 2rem;
-                margin: 0 auto 5vw auto;
+                margin: 0 auto 2.5vw auto;
                 padding-left: -5vw;
                 text-align: center;
 
@@ -1505,7 +1542,7 @@ footer {
             p {
                 width: 100%;        
                 font-size: 1.5rem;
-                padding: 0 15% 3vw 15%;
+                padding: 0 15%;
                 text-align: center;
                
             }
@@ -1514,13 +1551,14 @@ footer {
 
 
         .carrusel {
-           
-
+           padding: 0;
+           margin-top: -3vw;
               
             ul {
                             
                 gap: 1vw;
                 margin-right: 10vw;
+                padding: 0;
                     
             }
 
@@ -1535,9 +1573,9 @@ footer {
         /*reseñas*/
 
         .reseñas {
-
-            padding: 1vw 7vw;
-            margin-top: 0;
+            height: 103vh;
+            padding: 3vw 7vw;
+            margin-top: -3vw;
         
             button {
               
@@ -1551,6 +1589,10 @@ footer {
                 a {
                     font-size: 1.2rem;
                     
+                }
+
+                a:hover {
+                    color:#95b7c2;
                 }
 
             }
@@ -1576,21 +1618,26 @@ footer {
 
             ul {
                 padding: 2vw 7vw;
-                gap: 2vw;
+                gap: 3vw;
                 justify-content: center;
 
                 li {
                     width: 25%;
-                    padding: 5vw 3vw ;
+                    padding: 4vw 3vw ;
                     font-size: 1.1rem;
                     background: rgb(43, 47, 48);
                     border: none;
                     color: whitesmoke;
                     font-size: 1.8rem;
                     text-align: center;
-                    border-radius: 10px;
-                    filter: drop-shadow();
+                    border-radius: 15px;
+                    filter: drop-shadow(3px 3px 3px #929292da);
 
+                }
+
+                li:hover {
+                    color: #97bbc9;
+                    filter: drop-shadow(3px 3px 4px #808080);
                 }
 
                 .experiencia {
@@ -1689,7 +1736,7 @@ footer {
             position:fixed;
             bottom: 20vw;
             right: 3vw;
-            top: 95vh;
+            top: 86vh;
             
             img {
                 width: 5vw;
@@ -1732,23 +1779,28 @@ footer {
     margin-top: 0; 
     padding: 0;
     text-align: center;
+    gap: 2vw;
 
     }
 
 
     .sociales img {
 
-        width: 40px;
-        height: 40px;
+        width: 39px;
+        height: 39px;
               
+    
     }
 
+       .sociales .tiktok {
+            padding-top: 0.3vw;
+            width: 46px;
+            height: 46px;
+        ;
+            
+        }
 
-    .sociales .tiktok {
-        width: 46px;
-        height: 46px;
-        
-    }
+    
 
     .sociales h3 {
 
