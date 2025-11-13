@@ -1047,6 +1047,8 @@ footer {
 
     .reseñas {
 
+        height: 63vh;
+
         padding: 10vw 7vw 6vw 7vw;
      
     
@@ -1078,7 +1080,7 @@ footer {
    
     .items {
         width: 100%;
-        margin-top: 5vw;
+        margin-top: 7vw;
 
         ul {
             padding: 2vw 7vw;
@@ -1668,8 +1670,8 @@ footer {
 
 
             iframe {
-                width: 500px;
-                height: 500px;
+                width: 550px;
+                height: 620px;
                 padding: 0;
             }
         }
